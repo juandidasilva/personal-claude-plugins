@@ -1,0 +1,16 @@
+{
+  "name": "personal-claude-plugins",
+  "owner": {
+    "name": "Juan Diego da Silva"
+  },
+  "metadata": {
+    "description": "Juan Diego da Silva's personal Claude Code plugins, starting with a multi-agent apartment-purchase research toolkit."
+  },
+  "plugins": [
+    {
+      "name": "apartment-buyer-research",
+      "source": "./",
+      "description": "Multi-agent research toolkit for evaluating apartment purchases, with specialists in finance, legal risk, technical inspection, urban connectivity, valuation, and family fit."
+    }
+  ]
+}
