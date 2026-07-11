@@ -18,9 +18,26 @@ Multi-agent toolkit for investigating an apartment purchase before reserving, ne
 
 ## Installation in Claude Code
 
-From a local clone of this repository, install the plugin using Claude Code's plugin command for a local directory, or add the repository as a plugin marketplace/source according to the current Claude Code documentation.
+Add this repository as a plugin marketplace and install the plugin:
+
+```
+/plugin marketplace add juandidasilva/personal-claude-plugins
+/plugin install apartment-buyer-research@personal-claude-plugins
+```
+
+For local development, launch Claude Code pointing at a clone of this repository:
+
+```
+claude --plugin-dir /path/to/personal-claude-plugins
+```
 
 The plugin manifest is located at `.claude-plugin/plugin.json`, and the subagents are discovered from `agents/*.md`.
+
+## Defaults and conventions
+
+- **Jurisdiction**: agents default to Uruguay (UI, ITP, escribano, propiedad horizontal / Ley 10.751, gastos comunes) and adapt automatically when the property is clearly in another country.
+- **Common report format**: every specialist returns the same structure — executive summary, evidence reviewed, findings, red flags, missing information, financial impact, a 0–10 score, a recommendation (advance / advance only if negotiated / investigate more / reject), and a confidence level — so reports are comparable and easy to consolidate.
+- **Language**: agent prompts are in English; agents respond in the language of your conversation.
 
 ## Suggested use
 
