@@ -1,0 +1,9 @@
+{
+  "name": "apartment-buyer-research",
+  "description": "Multi-agent research toolkit for evaluating apartment purchases, with specialists in finance, legal risk, technical inspection, urban connectivity, valuation, and family fit.",
+  "version": "0.1.0",
+  "author": {
+    "name": "Juan Diego da Silva"
+  },
+  "repository": "https://github.com/juandidasilva/personal-claude-plugins"
+}
